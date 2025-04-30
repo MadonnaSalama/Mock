@@ -1,1 +1,55 @@
-
+[
+  {
+    "id": 1,
+    "name": "HR Segment",
+    "description": "HR Segment",
+    "created": "2025-04-30T15:28:56+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 0,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 1,
+        "segmentId": 1,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"BusinessUnit\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"ITWORX\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:56+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Finance Segment",
+    "description": "Finance Segment",
+    "created": "2025-04-30T15:29:25+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 1,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 2,
+        "segmentId": 2,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Finance\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:29:25+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  }
+]
+ 
