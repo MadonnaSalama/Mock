@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "HR Segment",
-    "description": "HR Segment",
-    "created": "2025-04-30T15:28:56+03:00",
+    "name": "Finance Segment 1",
+    "description": "Finance Segment",
+    "created": "2025-04-30T15:28:01+03:00",
     "createdByUmbracoUserId": -1,
     "updated": null,
     "updatedByUmbracoUserId": null,
@@ -17,9 +17,9 @@
         "id": 1,
         "segmentId": 1,
         "type": "Dozen",
-        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"BusinessUnit\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"ITWORX\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Finance\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
         "isNegation": false,
-        "created": "2025-04-30T15:28:56+03:00",
+        "created": "2025-04-30T15:28:01+03:00",
         "updated": null,
         "validationMode": 0
       }
@@ -27,9 +27,9 @@
   },
   {
     "id": 2,
-    "name": "Finance Segment",
-    "description": "Finance Segment",
-    "created": "2025-04-30T15:29:25+03:00",
+    "name": "IT Segment 2",
+    "description": "IT Segment",
+    "created": "2025-04-30T15:28:02+03:00",
     "createdByUmbracoUserId": -1,
     "updated": null,
     "updatedByUmbracoUserId": null,
@@ -43,13 +43,1260 @@
         "id": 2,
         "segmentId": 2,
         "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"IT\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:02+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Marketing Segment 3",
+    "description": "Marketing Segment",
+    "created": "2025-04-30T15:28:03+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 2,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 3,
+        "segmentId": 3,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Marketing\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:03+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Sales Segment 4",
+    "description": "Sales Segment",
+    "created": "2025-04-30T15:28:04+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 3,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 4,
+        "segmentId": 4,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Sales\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:04+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Support Segment 5",
+    "description": "Support Segment",
+    "created": "2025-04-30T15:28:05+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 4,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 5,
+        "segmentId": 5,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Support\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:05+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Logistics Segment 6",
+    "description": "Logistics Segment",
+    "created": "2025-04-30T15:28:06+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 5,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 6,
+        "segmentId": 6,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Logistics\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:06+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Legal Segment 7",
+    "description": "Legal Segment",
+    "created": "2025-04-30T15:28:07+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 6,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 7,
+        "segmentId": 7,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Legal\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:07+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Engineering Segment 8",
+    "description": "Engineering Segment",
+    "created": "2025-04-30T15:28:08+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 7,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 8,
+        "segmentId": 8,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Engineering\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:08+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "QA Segment 9",
+    "description": "QA Segment",
+    "created": "2025-04-30T15:28:09+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 8,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 9,
+        "segmentId": 9,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"QA\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:09+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "HR Segment 10",
+    "description": "HR Segment",
+    "created": "2025-04-30T15:28:10+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 9,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 10,
+        "segmentId": 10,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"BusinessUnit\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"ITWORX\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:10+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Finance Segment 11",
+    "description": "Finance Segment",
+    "created": "2025-04-30T15:28:11+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 10,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 11,
+        "segmentId": 11,
+        "type": "Dozen",
         "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Finance\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
         "isNegation": false,
-        "created": "2025-04-30T15:29:25+03:00",
+        "created": "2025-04-30T15:28:11+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "IT Segment 12",
+    "description": "IT Segment",
+    "created": "2025-04-30T15:28:12+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 11,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 12,
+        "segmentId": 12,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"IT\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:12+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Marketing Segment 13",
+    "description": "Marketing Segment",
+    "created": "2025-04-30T15:28:13+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 12,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 13,
+        "segmentId": 13,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Marketing\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:13+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Sales Segment 14",
+    "description": "Sales Segment",
+    "created": "2025-04-30T15:28:14+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 13,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 14,
+        "segmentId": 14,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Sales\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:14+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Support Segment 15",
+    "description": "Support Segment",
+    "created": "2025-04-30T15:28:15+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 14,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 15,
+        "segmentId": 15,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Support\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:15+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Logistics Segment 16",
+    "description": "Logistics Segment",
+    "created": "2025-04-30T15:28:16+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 15,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 16,
+        "segmentId": 16,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Logistics\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:16+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Legal Segment 17",
+    "description": "Legal Segment",
+    "created": "2025-04-30T15:28:17+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 16,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 17,
+        "segmentId": 17,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Legal\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:17+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Engineering Segment 18",
+    "description": "Engineering Segment",
+    "created": "2025-04-30T15:28:18+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 17,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 18,
+        "segmentId": 18,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Engineering\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:18+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "QA Segment 19",
+    "description": "QA Segment",
+    "created": "2025-04-30T15:28:19+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 18,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 19,
+        "segmentId": 19,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"QA\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:19+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "HR Segment 20",
+    "description": "HR Segment",
+    "created": "2025-04-30T15:28:20+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 19,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 20,
+        "segmentId": 20,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"BusinessUnit\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"ITWORX\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:20+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Finance Segment 21",
+    "description": "Finance Segment",
+    "created": "2025-04-30T15:28:21+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 20,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 21,
+        "segmentId": 21,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Finance\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:21+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "IT Segment 22",
+    "description": "IT Segment",
+    "created": "2025-04-30T15:28:22+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 21,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 22,
+        "segmentId": 22,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"IT\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:22+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Marketing Segment 23",
+    "description": "Marketing Segment",
+    "created": "2025-04-30T15:28:23+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 22,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 23,
+        "segmentId": 23,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Marketing\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:23+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Sales Segment 24",
+    "description": "Sales Segment",
+    "created": "2025-04-30T15:28:24+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 23,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 24,
+        "segmentId": 24,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Sales\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:24+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Support Segment 25",
+    "description": "Support Segment",
+    "created": "2025-04-30T15:28:25+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 24,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 25,
+        "segmentId": 25,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Support\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:25+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Logistics Segment 26",
+    "description": "Logistics Segment",
+    "created": "2025-04-30T15:28:26+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 25,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 26,
+        "segmentId": 26,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Logistics\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:26+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Legal Segment 27",
+    "description": "Legal Segment",
+    "created": "2025-04-30T15:28:27+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 26,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 27,
+        "segmentId": 27,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Legal\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:27+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Engineering Segment 28",
+    "description": "Engineering Segment",
+    "created": "2025-04-30T15:28:28+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 27,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 28,
+        "segmentId": 28,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Engineering\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:28+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "QA Segment 29",
+    "description": "QA Segment",
+    "created": "2025-04-30T15:28:29+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 28,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 29,
+        "segmentId": 29,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"QA\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:29+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "HR Segment 30",
+    "description": "HR Segment",
+    "created": "2025-04-30T15:28:30+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 29,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 30,
+        "segmentId": 30,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"BusinessUnit\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"ITWORX\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:30+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Finance Segment 31",
+    "description": "Finance Segment",
+    "created": "2025-04-30T15:28:31+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 30,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 31,
+        "segmentId": 31,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Finance\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:31+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "IT Segment 32",
+    "description": "IT Segment",
+    "created": "2025-04-30T15:28:32+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 31,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 32,
+        "segmentId": 32,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"IT\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:32+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Marketing Segment 33",
+    "description": "Marketing Segment",
+    "created": "2025-04-30T15:28:33+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 32,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 33,
+        "segmentId": 33,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Marketing\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:33+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Sales Segment 34",
+    "description": "Sales Segment",
+    "created": "2025-04-30T15:28:34+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 33,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 34,
+        "segmentId": 34,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Sales\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:34+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Support Segment 35",
+    "description": "Support Segment",
+    "created": "2025-04-30T15:28:35+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 34,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 35,
+        "segmentId": 35,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Support\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:35+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Logistics Segment 36",
+    "description": "Logistics Segment",
+    "created": "2025-04-30T15:28:36+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 35,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 36,
+        "segmentId": 36,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Logistics\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:36+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Legal Segment 37",
+    "description": "Legal Segment",
+    "created": "2025-04-30T15:28:37+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 36,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 37,
+        "segmentId": 37,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Legal\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:37+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Engineering Segment 38",
+    "description": "Engineering Segment",
+    "created": "2025-04-30T15:28:38+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 37,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 38,
+        "segmentId": 38,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Engineering\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:38+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "QA Segment 39",
+    "description": "QA Segment",
+    "created": "2025-04-30T15:28:39+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 38,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 39,
+        "segmentId": 39,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"QA\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:39+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "HR Segment 40",
+    "description": "HR Segment",
+    "created": "2025-04-30T15:28:40+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 39,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 40,
+        "segmentId": 40,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"BusinessUnit\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"ITWORX\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:40+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Finance Segment 41",
+    "description": "Finance Segment",
+    "created": "2025-04-30T15:28:41+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 40,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 41,
+        "segmentId": 41,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Finance\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:41+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "IT Segment 42",
+    "description": "IT Segment",
+    "created": "2025-04-30T15:28:42+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 41,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 42,
+        "segmentId": 42,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"IT\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:42+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Marketing Segment 43",
+    "description": "Marketing Segment",
+    "created": "2025-04-30T15:28:43+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 42,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 43,
+        "segmentId": 43,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Marketing\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:43+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Sales Segment 44",
+    "description": "Sales Segment",
+    "created": "2025-04-30T15:28:44+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 43,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 44,
+        "segmentId": 44,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Sales\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:44+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Support Segment 45",
+    "description": "Support Segment",
+    "created": "2025-04-30T15:28:45+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 44,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 45,
+        "segmentId": 45,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Support\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:45+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Logistics Segment 46",
+    "description": "Logistics Segment",
+    "created": "2025-04-30T15:28:46+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 45,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 46,
+        "segmentId": 46,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Logistics\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:46+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Legal Segment 47",
+    "description": "Legal Segment",
+    "created": "2025-04-30T15:28:47+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 46,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 47,
+        "segmentId": 47,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Legal\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:47+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Engineering Segment 48",
+    "description": "Engineering Segment",
+    "created": "2025-04-30T15:28:48+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 47,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 48,
+        "segmentId": 48,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"Engineering\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:48+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "QA Segment 49",
+    "description": "QA Segment",
+    "created": "2025-04-30T15:28:49+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 48,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 49,
+        "segmentId": 49,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"Department\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"QA\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:49+03:00",
+        "updated": null,
+        "validationMode": 0
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "HR Segment 50",
+    "description": "HR Segment",
+    "created": "2025-04-30T15:28:50+03:00",
+    "createdByUmbracoUserId": -1,
+    "updated": null,
+    "updatedByUmbracoUserId": null,
+    "endTime": null,
+    "isTemporary": false,
+    "sortOrder": 49,
+    "controlGroupSize": 0.2,
+    "isActive": true,
+    "rules": [
+      {
+        "id": 50,
+        "segmentId": 50,
+        "type": "Dozen",
+        "config": "{\r\n  \"operation\": \"and\",\r\n  \"rules\": [\r\n    {\r\n      \"type\": \"string\",\r\n      \"subType\": \"compareRawValue\",\r\n      \"field\": \"BusinessUnit\",\r\n      \"operation\": \"equals\",\r\n      \"value\": \"ITWORX\"\r\n    }\r\n  ],\r\n  \"start\": null\r\n}",
+        "isNegation": false,
+        "created": "2025-04-30T15:28:50+03:00",
         "updated": null,
         "validationMode": 0
       }
     ]
   }
 ]
- 
